@@ -1,106 +1,121 @@
 ol {
-    margin-left: -40px;
-    margin-top: -20px;
-    list-style-position: inside;
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
 }
 
-.Contents{
-    font-weight: bolder;
+body {
+  background-color: lightgreen;
 }
 
-.ImageContainerOneColumn{
-    display: grid;
+.contents {
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  border: 5px solid darkgreen;
+  background-color: #00da80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageContainerOneColumn {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+}
+
+.ImageContainerTwoColumns {
+  display: grid;
+  @media only screen and (max-width: 800px) {
     grid-template-columns: 100%;
-    align-items: center;
+  }
+  @media only screen and (min-width: 801px) {
+    grid-template-columns: 50% 50%;
+  }
+  align-items: center;
 }
 
-.ImageContainerTwoColumns{
-    display: grid;
-    @media only screen and (max-width: 800px) {
-        grid-template-columns: 100%;
-    }
-    @media only screen and (min-width: 801px) {
-        grid-template-columns: 50% 50%;
-    }
-    align-items: center;
+.ImageContainerThreeColumns {
+  display: grid;
+  @media only screen and (max-width: 400px) {
+    grid-template-columns: 100%;
+  }
+  @media only screen and (min-width: 401px) and (max-width: 800px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media only screen and (min-width: 801px) {
+    grid-template-columns: 33% 33% 33%;
+  }
+  align-items: center;
 }
 
-.ImageContainerThreeColumns{
-    display: grid;
-    @media only screen and (max-width: 400px) {
-        grid-template-columns: 100%;
-    }
-    @media only screen and (min-width: 401px) and (max-width:800px) {
-        grid-template-columns: 50% 50%;
-    }
-    @media only screen and (min-width:801px){
-        grid-template-columns: 33% 33% 33%;
-    }
-    align-items: center;
+.ImageContainerFourColumns {
+  display: grid;
+  @media only screen and (max-width: 250px) {
+    grid-template-columns: 100%;
+  }
+  @media only screen and (min-width: 251px) and (max-width: 500px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media only screen and (min-width: 501px) and (max-width: 750px) {
+    grid-template-columns: 33% 33% 33%;
+  }
+  @media only screen and (min-width: 751px) {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  align-items: center;
 }
 
-.ImageContainerFourColumns{
-    display: grid;
-    @media only screen and (max-width: 250px) {
-        grid-template-columns: 100%;
-    }
-    @media only screen and (min-width: 251px) and (max-width:500px) {
-        grid-template-columns: 50% 50%;
-    }
-    @media only screen and (min-width:501px) and (max-width:750px) {
-        grid-template-columns: 33% 33% 33%;
-    }
-    @media only screen and (min-width:751px) {
-        grid-template-columns: 25% 25% 25% 25% ;
-    }
-    align-items: center;
+.image {
+  margin-left: 5px;
 }
 
-.image{
-    margin-left: 5px;
+.imageMaxOneColumn {
+  border-radius: 8px;
+  width: 45vw;
 }
 
-.imageMaxOneColumn{
-    border-radius: 8px;
+.imageMaxTwoColumns {
+  border-radius: 8px;
+  @media only screen and (max-width: 800px) {
+    width: 90vw;
+  }
+  @media only screen and (min-width: 801px) {
     width: 45vw;
+  }
 }
 
-.imageMaxTwoColumns{
-    border-radius: 8px;
-    @media only screen and (max-width: 800px) {
-        width: 90vw;
-    }
-    @media only screen and (min-width: 801px) {
-        width: 45vw;
-    }
+.imageMaxThreeColumns {
+  border-radius: 8px;
+  @media only screen and (max-width: 400px) {
+    width: 90vw;
+  }
+  @media only screen and (min-width: 401px) and (max-width: 800px) {
+    width: 45vw;
+  }
+  @media only screen and (min-width: 801px) {
+    width: 30vw;
+  }
 }
 
-.imageMaxThreeColumns{
-    border-radius: 8px;
-    @media only screen and (max-width: 400px) {
-        width: 90vw;
-    }
-    @media only screen and (min-width: 401px) and (max-width:800px) {
-        width: 45vw;
-    }
-    @media only screen and (min-width:801px){
-        width: 30vw;
-    }
-
+.imageMaxFourColumns {
+  @media only screen and (max-width: 250px) {
+    width: 90vw;
+  }
+  @media only screen and (min-width: 251px) and (max-width: 500px) {
+    width: 45vw;
+  }
+  @media only screen and (min-width: 501px) and (max-width: 750px) {
+    width: 30vw;
+  }
+  @media only screen and (min-width: 751px) {
+    width: 23vw;
+  }
+  border-radius: 8px;
 }
 
-.imageMaxFourColumns{
-    @media only screen and (max-width:250px){
-        width: 90vw;
-    }
-    @media only screen and (min-width: 251px) and (max-width:500px) {
-        width: 45vw;
-    }
-    @media only screen and (min-width:501px) and (max-width:750px) {
-        width: 30vw;
-    }
-    @media only screen and (min-width:751px) {
-        width: 23vw;
-    }
-    border-radius: 8px;
+.navigationContainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
