@@ -1,3 +1,10 @@
+/*
+071952
+0B666A
+35A29F
+97FEED
+*/
+
 ol {
   margin-left: -40px;
   margin-top: -20px;
@@ -5,15 +12,34 @@ ol {
 }
 
 body {
-  background-color: lightgreen;
+  background-color: #071952;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color:#97FEED;
+  font-family: 'Hind',sans-serif;
+  text-transform: uppercase;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+  font-family: 'Hind',sans-serif;
+  font-style: inherit;
+}
+
+p{
+  color:#97FEED;
+}
+
+a{
+  color: #35A29F;
 }
 
 .contents {
   width: 100%;
   font-weight: bolder;
   text-align: center;
-  border: 5px solid darkgreen;
-  background-color: #00da80;
+  border: 5px solid #97FEED;
+  background-color: #0B666A;
   display: flex;
   justify-content: center;
   align-items: center;
